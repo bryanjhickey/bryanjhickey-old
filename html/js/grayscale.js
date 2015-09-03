@@ -38,13 +38,13 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 10,
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(-37.7377022,144.8272204), // New York
 
         // Disables the default Google Maps UI components
-        disableDefaultUI: true,
+        disableDefaultUI: false,
         scrollwheel: false,
         draggable: false,
 
@@ -54,7 +54,7 @@ function init() {
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#333333"
             }, {
                 "lightness": 17
             }]
@@ -111,7 +111,7 @@ function init() {
         }, {
             "elementType": "labels.text.stroke",
             "stylers": [{
-                "visibility": "on"
+                "visibility": "off"
             }, {
                 "color": "#000000"
             }, {
@@ -143,7 +143,8 @@ function init() {
             "featureType": "administrative",
             "elementType": "geometry.fill",
             "stylers": [{
-                "color": "#000000"
+                 "visibility": "off"
+                // "color": "#000000"
             }, {
                 "lightness": 20
             }]
